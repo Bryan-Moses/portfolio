@@ -481,10 +481,11 @@ body {
    ======================================== */
 
 .certs-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .cert-card {
@@ -541,6 +542,7 @@ body {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  width: 100%;
 }
 
 .cert-badge-progress {
